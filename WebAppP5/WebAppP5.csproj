@@ -72,10 +72,12 @@
     <Content Include="App_Data\Member.xml" />
     <Content Include="App_Data\Staff.xml" />
     <Content Include="Default.aspx" />
+    <Content Include="DLLtryIt.aspx" />
     <Content Include="Global.asax" />
     <Content Include="Login.aspx" />
     <Content Include="Member.aspx" />
     <Content Include="MemberRegister.aspx" />
+    <Content Include="serviceTryit.aspx" />
     <Content Include="Staff.aspx" />
     <Content Include="Unauthorized.aspx" />
     <Content Include="Web.config" />
@@ -87,6 +89,13 @@
     </Compile>
     <Compile Include="Default.aspx.designer.cs">
       <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DLLtryIt.aspx.cs">
+      <DependentUpon>DLLtryIt.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DLLtryIt.aspx.designer.cs">
+      <DependentUpon>DLLtryIt.aspx</DependentUpon>
     </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -113,6 +122,13 @@
       <DependentUpon>MemberRegister.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="serviceTryit.aspx.cs">
+      <DependentUpon>serviceTryit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="serviceTryit.aspx.designer.cs">
+      <DependentUpon>serviceTryit.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Staff.aspx.cs">
       <DependentUpon>Staff.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -137,7 +153,12 @@
       <DependentUpon>Web.config</DependentUpon>
     </None>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\LarissaDLL_ClassLibrary\LarissaDLL_ClassLibrary.csproj">
+      <Project>{fecac35f-dae0-47da-afaf-ae337245afbe}</Project>
+      <Name>LarissaDLL_ClassLibrary</Name>
+    </ProjectReference>
+  </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
